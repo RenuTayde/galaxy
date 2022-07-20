@@ -1,0 +1,209 @@
+.sidebar{
+	position: absolute;
+	left :0;
+	width: 250px;
+	height: 800px;
+	background: #f0f0f5;
+	/* background: #042331; */
+}
+.sidebar header {
+	font-size: 22px;
+	color:black;
+	text-align: center;
+	line-height: 75px !important;
+	/* background: #063146; */
+	user-select:none;
+}
+.sidebar ul a{
+	display: block;
+	height:100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color:black;
+	padding-left: 40px;
+	box-sizing: border-box;
+	/* border-top:  1px solid gray;
+	border-bottom: 1px solid gray; */
+	list-style: none;
+
+}
+.nav-card{
+	margin :20px;
+
+}
+.sidebar ul{
+	list-style-type: none;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { 
+	text-decoration: none; 
+	background-color:#e0e0eb;
+	border-radius: 20px;
+	padding-right: 40px;
+	margin-right: 20px !important;
+ }
+
+
+a:active { text-decoration: none; } 
+.app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+  .app__videoFeed{
+      top: 440px;
+      left: 24px;
+      position: fixed;
+      border-radius:50%;
+      border: 1px solid transparent !important;
+      width:200px;
+      height: 200px; 
+      object-fit: cover;
+   }
+   .button{
+      width: 220px;
+   }
+   .videoheader{
+      width: 230px;
+      height: 180px;
+      position: relative;
+      top: 185px;
+      left: -300px;
+   }
+   .img{
+      text-align: center;
+      margin-top: 50px;
+      max-width: 650px;
+   }
+   .img img{
+      width:350px;
+   }
+ 
+ 
+  .VideoContainer{
+   margin-top:0;
+   margin-left: 300px;
+}
+.VideoContainer video{
+width:100px;
+ margin: 2px;
+
+}
+.Loop_one{
+   position: absolute;
+   top:50px;
+    bottom: 0;
+    right: 375px;
+    padding: 5px 10px;
+    width: min-content;
+    background-color: black;
+    color: white;
+    border-radius: 10px 0 10px 0;
+    content: attr(data-username);
+    height: max-content;
+    line-height: 1.1em;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 2;
+    text-transform: capitalize;
+  }
+.heading{
+   text-align: center;
+}
+
+/* PopUpScreen */
+.Container{
+   pointer-events: all;
+   z-index: 2147483646;
+   transition: right 1s cubic-bezier(0.19, 1, 0.22, 1) 0s, height 0.2s ease-in-out 0s;
+   width: 320px;
+   height: 350px;
+   margin: 20px;
+   border-radius: 13px;
+   top: var(--lns-space-large);
+   right: var(--lns-space-large); 
+   background-color: whitesmoke;
+   position: absolute;
+   top: 95px;
+   left: 1000px;
+}
+.TopNav{
+   display: flex;
+   justify-content: space-between;
+   height: 36px;
+   padding: 10px;
+   width: 300px;
+}
+.AudioLabel{
+   padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+}
+.VideoLabel{
+   padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+}
+.VideoSeting{
+   padding: 10px;
+}
+.VideoSeting span{
+   margin: 10px;
+}
+.VideoSection{
+   margin: 10px;
+}
+.Recording {
+   padding: 10px;
+}
+.section_one{
+   margin: 10px;
+   width:300px;
+}
+.section_two{
+   margin: 10px;
+   width: 300px;
+}
+.StartBtn button{
+   border: none;
+   width: 300px;
+   margin: 10px;
+   height: 50px;
+   font-weight: bold;
+   background-color: tomato;
+   color: white;
+   border-radius: 5px;
+}
+ .Show.open{
+
+   opacity: 1;
+   visibility: visible;
+   z-index: 4;
+   position: fixed;
+   transform: translateX(0);
+  
+ }
+ .modal-content{
+   position: relative;
+   top: 125px;
+   left: -250px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 316px;
+   pointer-events: auto;
+   background-color:white;
+   background-clip: padding-box;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 0.3rem;
+   outline: 0;
+ }
